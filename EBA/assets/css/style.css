@@ -1,4 +1,4 @@
-/* RESET & BOX-SIZING */
+²/* RESET & BOX-SIZING */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Open Sans', sans-serif; background: #F5F1E8; color: #333; }
@@ -181,4 +181,29 @@ footer {
   .section { flex-direction: column; text-align: center; }
   .section-image img { max-width: 100%; }
   .footer-container { flex-direction: column; text-align: center; }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+
+  .footer-col {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding-bottom: 1rem;
+  }
+
+  .menu {
+    z-index: 999;
+  }
 }
